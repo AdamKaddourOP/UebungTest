@@ -16,13 +16,15 @@ public class BuergeraemterModel implements Observable {
 	
 	private Buergeramt buergeramt;
 
+	//hier
 	public static BuergeraemterModel instanz=null;
 	LinkedList<Observer> list=new LinkedList<Observer>();
-	
+	//
 	public BuergeraemterModel() {
 		
 	}
 	
+	//
 	public static BuergeraemterModel getInstanz() {
 		
 		if(instanz==null) {

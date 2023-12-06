@@ -1,4 +1,4 @@
-package gui;
+package gui.guiBuergeraemter;
 
 import java.io.IOException;
 
@@ -16,6 +16,7 @@ public class BuergeraemterControl implements Observer {
 	public BuergeraemterControl(Stage primaryStage){
 		this.buergeraemterModel =buergeraemterModel.getInstanz();
 		this.buergeraemterView = new BuergeraemterView(this, primaryStage,buergeraemterModel);
+		//
 		buergeraemterModel.addObserver(this);
 		
 	}
@@ -40,6 +41,7 @@ public class BuergeraemterControl implements Observer {
 	   	
     }
 
+	//
 	@Override
 	public void update() {
 		
